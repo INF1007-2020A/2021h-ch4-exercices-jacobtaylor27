@@ -43,8 +43,7 @@ def main() -> None:
 
     chaine = "hello world!"
     print(f"On remplace le caratère w par le caractère z dans la chaine: {chaine}. Résultat : {replace_char(chaine, 'w', 'z')}")
-    
-    chaine = "hello"
+
     print(f"Le nombre d'occurrence de l dans hello est : {get_number_of_char(chaine, 'l')}")
     
     chaine = "Baby shark doo doo doo doo doo doo"
