@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 def is_even_len(string: str) -> bool:
     return (len(string) % 2 == 0)
 
@@ -17,7 +16,6 @@ def get_number_of_char(string: str, char: str) -> int:
         if (s is char):
             val += 1
     return val
-
 
 def get_number_of_words(sentence: str, word: str) -> int:
     var = sentence.split()
