@@ -2,9 +2,6 @@
 # -*- coding: utf-8 -*-
 
 
-from typing import NamedTuple
-
-
 def is_even_len(string: str) -> bool:
     return (len(string) % 2 == 0)
 
