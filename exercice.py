@@ -2,25 +2,34 @@
 # -*- coding: utf-8 -*-
 
 
-def is_even_len(string: str) -> bool:
-    pass
+from typing import NamedTuple
 
+
+def is_even_len(string: str) -> bool:
+    return (len(string) % 2 == 0)
 
 def remove_third_char(string: str) -> str:
-    pass
-
+    return string[0:2] + string[3:len(string)]
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    pass
-
+    return string.replace(old_char, new_char)
 
 def get_number_of_char(string: str, char: str) -> int:
-    pass
+    val = 0
+    for s in string:
+        if (s is char):
+            val += 1
+    return val
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
-
+    var = sentence.split()
+    count, n = 0 , 0
+    while n < len(var):
+        if var[n] == word:
+            count += 1
+        n += 1
+    return count
 
 def main() -> None:
     chaine = "Bonjour!"
@@ -34,7 +43,8 @@ def main() -> None:
 
     chaine = "hello world!"
     print(f"On remplace le caratère w par le caractère z dans la chaine: {chaine}. Résultat : {replace_char(chaine, 'w', 'z')}")
-
+    
+    chaine = "hello"
     print(f"Le nombre d'occurrence de l dans hello est : {get_number_of_char(chaine, 'l')}")
     
     chaine = "Baby shark doo doo doo doo doo doo"
