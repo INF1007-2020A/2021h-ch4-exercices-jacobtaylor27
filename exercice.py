@@ -19,7 +19,7 @@ def get_number_of_char(string: str, char: str) -> int:
     return val
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    # return sentence.count(word)
+    ## return sentence.count(word)
     var = sentence.split()
     count, n = 0 , 0
     while n < len(var):
